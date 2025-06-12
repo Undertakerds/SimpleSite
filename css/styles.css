@@ -1,3 +1,4 @@
+/* Variables */
 :root {
   --color-black: #000000;
   --color-primary: #34547a;
@@ -22,6 +23,8 @@
   --gap-lg: calc(var(--gap) * 1.5);
   --gap-xl: calc(var(--gap) * 2);
 }
+
+/* Typography */
 
 * {
   box-sizing: border-box;
@@ -54,6 +57,7 @@ a {
   color: var(--color-black);
 }
 
+/* Common Classes */
 .container {
   width: min(100% - var(--gap-xl), var(--container-primary));
   margin-inline: auto;
@@ -64,24 +68,43 @@ a {
   margin-inline: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* Blocks */
 .header {
   background-color: var(--color-gray-light);
-  min-height: 700px;
-  padding-top: 80px;
+  padding-top: 69px;
   padding-bottom: 140px;
 }
 
 .navbar {
-  margin-bottom: 162px;
+  margin-bottom: 141px;
 }
 
 .navbar__list {
   display: flex;
-  gap: 45px;
+  gap: 27px;
+  margin-left: -0.75em;
 }
 
 .navbar__link {
+  display: block;
   letter-spacing: var(--letter-spacing);
+  padding: 0.5em 0.75em;
+  text-transform: uppercase;
 }
 
 .navbar__link--active {
@@ -97,11 +120,12 @@ a {
 }
 
 .hero__title {
-  margin-bottom: 60px;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .hero__description {
-  margin-bottom: 65px;
+  margin-bottom: 57px;
   color: var(--color-secondary);
 }
 
@@ -117,3 +141,79 @@ a {
   color: var(--color-white);
   letter-spacing: var(--letter-spacing);
 }
+
+.main {}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.section__title {
+  margin-bottom: 36px;
+}
+
+.section__description {
+  color: var(--color-secondary);
+}
+
+.about {}
+
+.about__title {}
+
+.about__description {}
+
+.experience {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.experience__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+
+.experience__item {
+  display: flex;
+  gap: var(--gap);
+}
+
+.experience__item-picture {
+  order: -1;
+}
+
+.experience__item-image {
+  display: block;
+}
+
+.experience__item-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1;
+}
+
+.experience__item-number {
+  font-size: 1.3125rem;
+  font-weight: 500;
+}
+
+.experience__item-label {}
+
+
+.container {}
+
+.experience__item {}
+
+.process {}
+
+.process__title {}
+
+.process__description {}
+
+.video {}
