@@ -1,0 +1,19 @@
+@use "../presets" as *;
+
+@mixin media-lg {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media (max-width: 600px) {
+    @content;
+  }
+}

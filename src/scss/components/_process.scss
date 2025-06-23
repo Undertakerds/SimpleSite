@@ -1,0 +1,20 @@
+@use "../presets" as *;
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 36px;
+  }
+
+  &__description {
+    color: $color-secondary;
+  }
+}
+
+.process {
+  padding-bottom: 57px;
+  background-color: $color-gray-light;
+}

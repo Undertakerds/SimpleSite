@@ -1,0 +1,45 @@
+@use "mixins" as *; 
+@use "../presets" as *;
+
+.experience {
+  &__container {
+    @include media-lg {
+      gap: $gap-lg;
+    }
+
+    @include media-md {
+      flex-wrap: wrap;
+      gap: $gap-lg;
+      justify-content: center;
+    }
+
+    @include media-sm {
+      align-items: stretch;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    @include media-md {
+      flex: 1 1 320px;
+      justify-content: flex-start;
+      min-width: 220px;
+      max-width: 340px;
+    }
+
+    @include media-sm {
+      align-items: center;
+      gap: 12px;
+      justify-content: flex-start;
+
+      width: 100%;
+      min-width: 0;
+      max-width: 320px;
+      margin: 0 auto;
+      padding: 16px 0;
+    }
+  }
+}

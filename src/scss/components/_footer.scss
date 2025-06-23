@@ -1,0 +1,18 @@
+@use "../presets" as *;
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: $color-white;
+  background-color: $color-primary;
+
+  &__title {
+    margin-bottom: 5px;
+    font-size: 1.3125rem;
+    font-weight: 500;
+  }
+
+  &__description {
+    font-size: 0.8125rem;
+  }
+}
